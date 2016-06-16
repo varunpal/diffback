@@ -1,0 +1,25 @@
+{
+  "name": "diffback",
+  "version": "1.0.0",
+  "description": "Fire callbacks whenever properties of an object change.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunpal/diffback.git"
+  },
+  "keywords": [
+    "object",
+    "diff",
+    "callback",
+    "change"
+  ],
+  "author": "Varun Pal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varunpal/diffback/issues"
+  },
+  "homepage": "https://github.com/varunpal/diffback#readme"
+}
