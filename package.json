@@ -1,6 +1,6 @@
 {
   "name": "diffback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fire callbacks whenever properties of an object change.",
   "main": "index.js",
   "scripts": {

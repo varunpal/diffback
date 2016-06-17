@@ -24,6 +24,9 @@ var attach = function (object, property, callback) {
     Object.defineProperty(object, property, {
       set: function (value) {
         var oldValue = this.value || object[property];
+        if (oldValue === value) {
+          return;
+        }
         this.value = value;
         if (object.mappings[property] && object.mappings[property].length) {
           object.mappings[property].forEach(function (callback) {
@@ -46,7 +49,7 @@ var remove = function (object, property, callback) {
     return;
   }
   if (typeof callback !== 'function') {
-    console.error('Callback should be a function');
+    object.mappings[property] = [];
     return;
   }
 
